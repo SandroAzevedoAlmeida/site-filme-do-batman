@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover{
+    color: #D21617;
+}
+
+#logo{
+    width: 150px;
+    height: 90px;
+}
+
+#banner{
+    background-image: url('https://www.comunidadedasnacoes.com.br/wp-content/uploads/2022/04/batman.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer{
+    width: 50%;
+}
+
+#sinopse{
+    width: 50%;
+    display: flex:
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description{
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 8px 10px
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weigth: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+.banner-1{
+    background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportEntertainmentNews/tagreuters.com2022binary_LYNXMPEI1M14A-FILEDIMAGE.jpg?w=876&h=484&crop=1');
+
+}
+
+.banner-2{
+    background-image: url('https://i.pinimg.com/originals/9f/98/3b/9f983ba9fef6f99e79b18ed8bd47c1f0.jpg');
+}
+
+.banner-3{
+    background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/The-Batman-Jeffrey-Wright-Commissioner-Gordon-Challenge.jpg');
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif; 
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #banner{
+        background-position: 40%;
+    }
+
+    #trailer-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer{
+        width: 100%;
+    }
+
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .button{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify: center;
+    }
+
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
+
+#contato{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario{
+    color: #fff;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nome{
+    color: #fff;
+}
+
+#sobrenome{
+    color: #fff;
+}
+
+#email{
+    color: #fff;
+}
+
+#estado{
+    color: #fff;
+}
+
+#mensagem{
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #da0505;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -100%;
+}
+
+#radio6:checked ~ .first{
+    margin-left: -125%;
+}
+
+#radio7:checked ~ .first{
+    margin-left: -150%;
+}
+
+#radio8:checked ~ .first{
+    margin-left: -175%;
+}
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:Last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: #fff;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background-color: #fff;
+}
+
+#radio7:checked ~ .navigation-auto .auto-btn7{
+    background-color: #fff;
+}
+
+#radio8:checked ~ .navigation-auto .auto-btn8{
+    background-color: #fff;
+}
